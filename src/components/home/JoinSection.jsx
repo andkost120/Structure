@@ -4,11 +4,13 @@ import PhoneInput from "react-phone-number-input"
 const JoinSection = ({ data, type }) => {
   const [phone, setPhone] = useState()
   return (
-    <section className={`join-section ${type === "hero" ? " hero" : ""}`}>
+    <section className={`join-section ${type === "hero" ? "hero" : ""}`}>
       <div className="left-part">
-        <h1>{data.title}</h1>
-        <p className="body1">{data.body}</p>
-        <p className="kicker-text">Ready to start trading?</p>
+        {type === "hero" ? <h1>{data.title}</h1> : <h2>{data.title}</h2>}
+        <p className="body1">{data.content}</p>
+        {type === "hero" && (
+          <p className="kicker-text">Ready to start trading?</p>
+        )}
         <div className="send-link">
           <PhoneInput
             international

@@ -22,7 +22,7 @@ const Header = () => {
               <Logo />
             </Link>
             <div
-              className={`hamburger ${showMenu ? " active" : ""}`}
+              className={`hamburger ${showMenu ? "active" : ""}`}
               onClick={() => handleToggle(!showMenu)}
               onKeyDown={() => handleToggle(!showMenu)}
               role="button"

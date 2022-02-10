@@ -50,9 +50,9 @@ footer {
       }
     }
     .caption-section {
-      margin-bottom: 80px;
+      padding-bottom: 80px;
       @include mq("phone", max) {
-        margin-bottom: 50px;
+        padding-bottom: 50px;
       }
       .caption-detail {
         display: flex;

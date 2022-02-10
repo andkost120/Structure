@@ -1,0 +1,29 @@
+.content-wrapper {
+  max-width: 479px;
+  .body1 {
+    margin: 20px 0 30px;
+  }
+  .btn-primary {
+    padding: 17px 25px;
+    display: block;
+    text-align: center;
+    @include mq("phone", max) {
+      width: 100%;
+    }
+  }
+  &.interaction {
+    max-width: 474px;
+    @include mq("tablet", max) {
+      max-width: 452px;
+      margin-left: auto;
+      margin-left: auto;
+      padding-top: 50px;
+      .btn-primary {
+        width: 100%;
+      }
+    }
+    @include mq("phone", max) {
+      padding-top: 30px;
+    }
+  }
+}

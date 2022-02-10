@@ -1,16 +1,62 @@
-import { iPhoneImg, PhoneImg } from "./imgImport"
+import { PhoneImg } from "./imgImport"
 
 //Homepage Data
 export const hero_data = {
   title: "Buy stocks with crypto",
-  body: "No market closes. No trading fees. All the stocks and crypto coins you love.",
+  content:
+    "No market closes. No trading fees. All the stocks and crypto coins you love.",
   img: PhoneImg,
 }
 export const join_data = {
   title: "Sign up today and get no-fee trading for life.",
-  body: "No market closes. No trading fees. All the stocks and crypto coins you love.",
-  img: iPhoneImg,
+  content:
+    "No market closes. No trading fees. All the stocks and crypto coins you love.",
+  img: PhoneImg,
 }
+
+export const interaction_data = {
+  title: "All of your assets, now in one place",
+  content:
+    "Deposit crypto to the Structure Mobile App and buy stocks, crypto, and other assets in seconds.",
+  btn: "Browse all assets",
+  uid: "browse-all-assets",
+}
+export const trading_data = [
+  {
+    title: "Trade crypto and stocks",
+    content:
+      "Have $200 in Bitcoin and want to purchase $100 of a Tesla stock? No problem, Structure makes this easy with the tap of a button.",
+    btn: "Swap assets",
+    uid: "swap-assets",
+    img: PhoneImg,
+  },
+  {
+    title: "No market closes",
+    content:
+      "Trade stocks, crypto, and other assets on Structure 24/7.¹ Markets are always open, weekends and holidays included.",
+    btn: "Get access now",
+    uid: "get-access-now",
+    img: PhoneImg,
+  },
+  {
+    title: "No trading pair limitations",
+    content: `Unlike Coinbase, Binance, and other crypto exchanges, any asset you own on Structure can be swapped with any crypto or stock we have available.
+
+Swap $1 or more of Bitcoin for your favorite new alt coin. Trade $1 or more of your Tesla stock for another stock or crypto coin.`,
+    btn: "Start trading",
+    uid: "start-trading",
+    img: PhoneImg,
+  },
+  {
+    title: "A better way to send and receive payments",
+    content: `Send payments in the asset of your choice. On Structure, all assets work like money.
+
+Received Bitcoin but really wanted Google stock? Accept payments in the asset of your choice.`,
+    btn: "Send a payment",
+    uid: "send-payment",
+    img: PhoneImg,
+  },
+]
 
 //Header Data
 export const header_menu = [
