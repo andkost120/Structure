@@ -30,12 +30,13 @@
   }
   &.world {
     max-width: 504px;
-    @include mq("phone") {
+    margin-right: 40px;
+    @include mq("laptop", max) {
+      margin-right: 0;
       max-width: calc(100% - 80px);
     }
-    @include mq("laptop") {
-      max-width: calc(100% - 260px);
-      margin-right: 80px;
+    @include mq("phone", max) {
+      max-width: calc(100% - 40px);
     }
   }
 }
