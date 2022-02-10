@@ -1,0 +1,79 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 500;
+}
+
+h1 {
+  font-size: 44px;
+  line-height: 46px;
+  @include mq("phone", max) {
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 46px;
+  @include mq("phone", max) {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
+
+h3 {
+  font-size: 34px;
+  line-height: 40px;
+  @include mq("phone", max) {
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 32px;
+  @include mq("phone", max) {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+
+h5 {
+  font-size: 22px;
+  line-height: 30px;
+  @include mq("phone", max) {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 28px;
+  @include mq("phone", max) {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-size: 16px;
+  margin: 0;
+  @include mq("phone", max) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.caption {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.body {
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+}

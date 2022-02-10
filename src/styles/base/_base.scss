@@ -1,0 +1,52 @@
+* {
+  font-family: "Inter" !important;
+  margin: 0;
+  padding: 0;
+  color: $black;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.container {
+  max-width: calc(100% - 40px);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq("phone") {
+    max-width: calc(100% - 80px);
+  }
+  @include mq("laptop") {
+    max-width: calc(100% - 260px);
+  }
+}
+
+section {
+  margin: 80px 0;
+  @include mq("tablet", max) {
+    margin: 60px 0;
+  }
+}
+
+.mt-auto {
+  margin-top: auto;
+}
