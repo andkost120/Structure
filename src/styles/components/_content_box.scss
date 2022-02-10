@@ -2,13 +2,13 @@
   max-width: 479px;
   .body1 {
     margin: 20px 0 30px;
+    white-space: pre-line;
   }
   .btn-primary {
     padding: 17px 25px;
-    display: block;
     text-align: center;
     @include mq("phone", max) {
-      width: 100%;
+      display: block;
     }
   }
   &.interaction {
@@ -19,11 +19,17 @@
       margin-left: auto;
       padding-top: 50px;
       .btn-primary {
-        width: 100%;
+        display: block;
       }
     }
     @include mq("phone", max) {
       padding-top: 30px;
+    }
+  }
+  &.world {
+    max-width: 504px;
+    @include mq("tablet", max) {
+      max-width: 100%;
     }
   }
 }

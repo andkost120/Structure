@@ -7,8 +7,8 @@ import {
   caption_left,
   caption_right,
   footer_menu,
+  social_links,
 } from "../../utils/staticData"
-import { Facebook, Telegram, Twitter } from "../../utils/imgImport"
 
 const Footer = () => (
   <footer>
@@ -20,21 +20,13 @@ const Footer = () => (
           ))}
         </ul>
         <ul className="social-items">
-          <li className="social-item">
-            <Link to="/">
-              <Facebook />
-            </Link>
-          </li>
-          <li className="social-item">
-            <Link to="/">
-              <Twitter />
-            </Link>
-          </li>
-          <li className="social-item">
-            <Link to="/">
-              <Telegram />
-            </Link>
-          </li>
+          {social_links.map((item, idx) => (
+            <li key={idx} className="social-item">
+              <Link to={item.url}>
+                <img src={item.icon} alt="social icon" />
+              </Link>
+            </li>
+          ))}
         </ul>
       </nav>
       <div className="caption-section">

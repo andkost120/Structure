@@ -2,7 +2,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6 {
   font-weight: 500;
 }
 
@@ -55,21 +56,15 @@ h5 {
   font-size: 22px;
   line-height: 30px;
   letter-spacing: -0.025em;
-  @include mq("phone", max) {
-    font-size: 16px;
-  }
 }
 
 h6 {
   font-size: 20px;
   line-height: 28px;
-  @include mq("phone", max) {
-    font-size: 14px;
-  }
 }
 
 p {
-  font-size: 16px;
+  @extend %text-body2;
   margin: 0;
   @include mq("phone", max) {
     font-size: 14px;
@@ -83,4 +78,7 @@ p {
 
 .body1 {
   @extend %text-body1;
+}
+.body2 {
+  @extend %text-body2;
 }

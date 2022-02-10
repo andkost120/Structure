@@ -1,4 +1,13 @@
-import { PhoneImg } from "./imgImport"
+import {
+  Account,
+  Deposit,
+  Facebook,
+  PhoneImg,
+  Telegram,
+  Trading,
+  Twitter,
+  World,
+} from "./imgImport"
 
 //Homepage Data
 export const hero_data = {
@@ -58,6 +67,34 @@ Received Bitcoin but really wanted Google stock? Accept payments in the asset of
   },
 ]
 
+export const guide = [
+  {
+    title: "Create an account",
+    content: "Download the Structure Mobile App and create your account.",
+    img: Account,
+  },
+  {
+    title: "Deposit crypto",
+    content: "Deposit crypto to your Structure Mobile App.",
+    img: Deposit,
+  },
+  {
+    title: "Start trading",
+    content: "You’re ready to start trading crypto and stocks.",
+    img: Trading,
+  },
+]
+
+export const world_asset = {
+  title: "Connecting the world of assets",
+  content: `Structure was created to give people around the world access to the same investment assets.  We’re on a mission to empower investors of all types through secure and easy-to-use  financial tools.
+
+Interested in helping us build the future of finance? Checkout our careers page to get started.`,
+  btn: "View open positions",
+  uid: "/",
+  img: World,
+}
+
 //Header Data
 export const header_menu = [
   { name: "All Assets", uid: "all-assets" },
@@ -73,6 +110,20 @@ export const footer_menu = [
   { name: "Privacy Policy", uid: "privacy-policy" },
   { name: "White Paper", uid: "white-paper" },
   { name: "Blog", uid: "blog" },
+]
+export const social_links = [
+  {
+    icon: Facebook,
+    url: "/",
+  },
+  {
+    icon: Twitter,
+    url: "/",
+  },
+  {
+    icon: Telegram,
+    url: "/",
+  },
 ]
 
 export const captions = [
