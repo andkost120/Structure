@@ -9,15 +9,22 @@ h5 {
 h1 {
   font-size: 44px;
   line-height: 46px;
+  letter-spacing: -0.03em;
+  @include mq("tablet", max) {
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: -0.035em;
+  }
   @include mq("phone", max) {
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 34px;
+    line-height: 40px;
   }
 }
 
 h2 {
   font-size: 40px;
   line-height: 46px;
+  letter-spacing: -0.035em;
   @include mq("phone", max) {
     font-size: 25px;
     line-height: 30px;
@@ -27,6 +34,7 @@ h2 {
 h3 {
   font-size: 34px;
   line-height: 40px;
+  letter-spacing: -0.035em;
   @include mq("phone", max) {
     font-size: 20px;
     line-height: 26px;
@@ -36,6 +44,7 @@ h3 {
 h4 {
   font-size: 26px;
   line-height: 32px;
+  letter-spacing: -0.025em;
   @include mq("phone", max) {
     font-size: 18px;
     line-height: 20px;
@@ -45,6 +54,7 @@ h4 {
 h5 {
   font-size: 22px;
   line-height: 30px;
+  letter-spacing: -0.025em;
   @include mq("phone", max) {
     font-size: 16px;
   }
@@ -68,12 +78,9 @@ p {
 }
 
 .caption {
-  font-size: 14px;
-  line-height: 22px;
+  @extend %text-caption;
 }
 
-.body {
-  font-size: 18px;
-  line-height: 26px;
-  letter-spacing: -0.02em;
+.body1 {
+  @extend %text-body1;
 }

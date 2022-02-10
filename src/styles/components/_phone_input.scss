@@ -1,0 +1,23 @@
+.PhoneInput {
+  width: 100%;
+  &Country {
+    margin-right: 8px;
+    padding: 17px 15px;
+    background-color: $light-gray;
+    border-radius: 8px;
+    .PhoneInputCountrySelect {
+    }
+  }
+  &Input {
+    margin-right: 8px;
+    padding: 17px 20px;
+    width: 100%;
+    background-color: $light-gray;
+    border: none;
+    border-radius: 8px;
+    @extend %text-body1;
+    &::placeholder {
+      color: $black;
+    }
+  }
+}
