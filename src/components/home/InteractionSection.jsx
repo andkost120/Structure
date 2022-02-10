@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import { Avalanche, Curvearrow, Cosmos, Internetcomputer, Shibainu, Decentraland, Yearn } from "../../utils/imgImport"
 
 
 const itemsList = ["Leaders", "Stocks", "Crypto", "Options (coming soon)"]
@@ -28,10 +29,11 @@ const InteractionSection = () => {
 
     return (
         <section>
-            <ScrollMenu 
-            LeftArrow={LeftArrow} 
-            RightArrow={RightArrow}
-            scrollToSelected={false}
+            <ScrollMenu
+                LeftArrow={LeftArrow}
+                RightArrow={RightArrow}
+                clickWhenDrag={true}
+                dragging={true}
             >
                 {items.map(({ id }) => (
                     <Card
@@ -101,14 +103,41 @@ function Card({ onClick, selected, title, itemId }) {
         <div
             onClick={() => onClick(visibility)}
             style={{
-                width: '160px',
+                width: 'max-content',
+                marginRight: '40px',
+                cursor: 'pointer',
             }}
             tabIndex={0}
         >
             <div className="card">
                 <div>{title}</div>
+                <div>selected: {JSON.stringify(!!selected)}{itemId}</div>
+                <IconCard />
             </div>
+
         </div>
     );
+}
+
+const IconCard = ({ title, price, percent, image }) => {
+    return (
+        <div className="iconCard">
+            <div className="icon">
+                <Avalanche />
+            </div>
+            <div className="finaceinfo">
+                <div className="title">
+                    <span>Yearn Classic Finance</span>
+                </div >
+                <div className="price">
+                    <span>$20.19</span>
+                </div>
+            </div>
+            <div className="percent">
+                <Curvearrow />
+                <span className="percent-value">109.3%</span>
+            </div>
+        </div>
+    )
 }
 export default InteractionSection
