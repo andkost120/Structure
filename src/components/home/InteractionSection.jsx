@@ -1,5 +1,7 @@
 import React, { useState } from "react"
-import { ScrollMenu, VisibilityContext } from "react-horizontal-scrolling-menu"
+import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+import { Avalanche, Curvearrow, Cosmos, Internetcomputer, Shibainu, Decentraland, Yearn } from "../../utils/imgImport"
+
 
 const itemsList = ["Leaders", "Stocks", "Crypto", "Options (coming soon)"]
 const getItems = () => itemsList.map((_, ind) => ({ id: `${_}` }))
@@ -23,6 +25,7 @@ const InteractionSection = () => {
       )
     }
 
+<<<<<<< HEAD
   return (
     <section className="">
       <ScrollMenu
@@ -42,6 +45,28 @@ const InteractionSection = () => {
       </ScrollMenu>
     </section>
   )
+=======
+    return (
+        <section>
+            <ScrollMenu
+                LeftArrow={LeftArrow}
+                RightArrow={RightArrow}
+                clickWhenDrag={true}
+                dragging={true}
+            >
+                {items.map(({ id }) => (
+                    <Card
+                        itemId={id} // NOTE: itemId is required for track items
+                        title={id}
+                        key={id}
+                        onClick={handleClick(id)}
+                        selected={isItemSelected(id)}
+                    />
+                ))}
+            </ScrollMenu>
+        </section>
+    )
+>>>>>>> 3c60be212b3d018a606fdc6b011bfb1ba7f12308
 }
 
 function LeftArrow() {
@@ -89,6 +114,7 @@ function Arrow({ children, disabled, onClick }) {
 function Card({ onClick, selected, title, itemId }) {
   const visibility = React.useContext(VisibilityContext)
 
+<<<<<<< HEAD
   return (
     <div
       onClick={() => onClick(visibility)}
@@ -104,3 +130,47 @@ function Card({ onClick, selected, title, itemId }) {
   )
 }
 export default InteractionSection
+=======
+    return (
+        <div
+            onClick={() => onClick(visibility)}
+            style={{
+                width: 'max-content',
+                marginRight: '40px',
+                cursor: 'pointer',
+            }}
+            tabIndex={0}
+        >
+            <div className="card">
+                <div>{title}</div>
+                <div>selected: {JSON.stringify(!!selected)}{itemId}</div>
+                <IconCard />
+            </div>
+
+        </div>
+    );
+}
+
+const IconCard = ({ title, price, percent, image }) => {
+    return (
+        <div className="iconCard">
+            <div className="icon">
+                <Avalanche />
+            </div>
+            <div className="finaceinfo">
+                <div className="title">
+                    <span>Yearn Classic Finance</span>
+                </div >
+                <div className="price">
+                    <span>$20.19</span>
+                </div>
+            </div>
+            <div className="percent">
+                <Curvearrow />
+                <span className="percent-value">109.3%</span>
+            </div>
+        </div>
+    )
+}
+export default InteractionSection
+>>>>>>> 3c60be212b3d018a606fdc6b011bfb1ba7f12308
