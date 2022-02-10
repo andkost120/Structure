@@ -1,4 +1,5 @@
 import React from "react"
+
 import { guide } from "../../utils/staticData"
 
 const GuideSection = () => {

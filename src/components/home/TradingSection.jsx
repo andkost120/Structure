@@ -1,6 +1,7 @@
 import React from "react"
-import { trading_data } from "../../utils/staticData"
+
 import ContentBox from "../ContentBox"
+import { trading_data } from "../../utils/staticData"
 
 const TradingSection = () => {
   return (

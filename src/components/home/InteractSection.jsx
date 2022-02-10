@@ -1,8 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
 import ContentBox from "../ContentBox"
-
 import { cards, interact_data } from "../../utils/staticData"
 import { Curvearrow } from "../../utils/imgImport"
 

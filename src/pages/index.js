@@ -2,13 +2,12 @@ import * as React from "react"
 
 import Seo from "../components/seo"
 import Layout from "../components/layout"
-
-import JoinSection from "../components/home/JoinSection"
-import InteractSection from "../components/home/InteractSection"
-import TradingSection from "../components/home/TradingSection"
+import ConnectSection from "../components/home/ConnectSection"
 import CTASection from "../components/home/CTASection"
 import GuideSection from "../components/home/GuideSection"
-import ConnectSection from "../components/home/ConnectSection"
+import InteractSection from "../components/home/InteractSection"
+import JoinSection from "../components/home/JoinSection"
+import TradingSection from "../components/home/TradingSection"
 
 import { hero_data, join_data } from "../utils/staticData"
 
