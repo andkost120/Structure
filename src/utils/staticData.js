@@ -1,10 +1,15 @@
-import { HeroImg } from "./imgImport"
+import { iPhoneImg, PhoneImg } from "./imgImport"
 
 //Homepage Data
 export const hero_data = {
   title: "Buy stocks with crypto",
   body: "No market closes. No trading fees. All the stocks and crypto coins you love.",
-  img: HeroImg,
+  img: PhoneImg,
+}
+export const join_data = {
+  title: "Sign up today and get no-fee trading for life.",
+  body: "No market closes. No trading fees. All the stocks and crypto coins you love.",
+  img: iPhoneImg,
 }
 
 //Header Data

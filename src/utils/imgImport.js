@@ -2,7 +2,8 @@
 import logo from "../images/svgs/logo.svg"
 import rightArrow from "../images/svgs/right-arrow.svg"
 //Images
-import heroImg from "../images/hero-img.png"
+import phoneImg from "../images/phone.png"
+import iphoneImg from "../images/iphone.png"
 
 import facebook from "../images/svgs/facebook.svg"
 import twitter from "../images/svgs/twitter.svg"
@@ -17,4 +18,5 @@ export const Twitter = twitter
 export const Telegram = telegram
 
 //Images
-export const HeroImg = heroImg
+export const PhoneImg = phoneImg
+export const iPhoneImg = iphoneImg
