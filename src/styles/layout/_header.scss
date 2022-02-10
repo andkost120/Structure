@@ -24,9 +24,11 @@
 }
 
 header {
+  position: sticky;
+  top: 0;
   background-color: $light-gray;
   padding: 12px 0;
-
+  z-index: 11;
   .nav-items {
     display: flex;
     position: fixed;
@@ -39,6 +41,7 @@ header {
     align-items: center;
     flex-direction: column;
     transition: right 0.3s ease-in-out;
+    z-index: 2;
     .nav-item {
       padding: 0 5px;
       flex-shrink: 0;

@@ -4,9 +4,9 @@ import React from "react"
 const ContentBox = ({ data, type }) => {
   return (
     <div
-      className={`content-wrapper ${
-        type === "interaction" ? "interaction" : ""
-      } ${type === "world-assets" ? "world" : ""}`}
+      className={`content-wrapper ${type === "interact" ? "interact" : ""} ${
+        type === "world-assets" ? "world" : ""
+      }`}
     >
       <h2>{data.title}</h2>
       <p className="body1">{data.content}</p>

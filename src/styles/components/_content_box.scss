@@ -11,11 +11,12 @@
       display: block;
     }
   }
-  &.interaction {
-    max-width: 474px;
-    @include mq("tablet", max) {
-      max-width: 452px;
-      margin-left: auto;
+  &.interact {
+    width: 474px;
+    flex-shrink: 0;
+    @include mq("laptop", max) {
+      width: 452px;
+      margin-right: auto;
       margin-left: auto;
       padding-top: 50px;
       .btn-primary {
@@ -23,6 +24,7 @@
       }
     }
     @include mq("phone", max) {
+      width: 100%;
       padding-top: 30px;
     }
   }

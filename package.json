@@ -20,8 +20,8 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-horizontal-scrolling-menu": "^2.7.0",
     "react-phone-number-input": "^3.1.46",
+    "react-tabs": "^3.2.3",
     "sass": "^1.49.7"
   },
   "devDependencies": {

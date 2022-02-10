@@ -4,7 +4,7 @@ import Seo from "../components/seo"
 import Layout from "../components/layout"
 
 import JoinSection from "../components/home/JoinSection"
-import InteractionSection from "../components/home/InteractionSection"
+import InteractSection from "../components/home/InteractSection"
 import TradingSection from "../components/home/TradingSection"
 import CTASection from "../components/home/CTASection"
 import GuideSection from "../components/home/GuideSection"
@@ -17,13 +17,15 @@ const HomePage = () => (
     <Seo title="Home" />
     <div className="container">
       <JoinSection data={hero_data} type="hero" />
-      <InteractionSection />
+      <InteractSection />
       <CTASection />
       <TradingSection />
       <GuideSection />
     </div>
     <ConnectSection />
-    <JoinSection data={join_data} />
+    <div className="container">
+      <JoinSection data={join_data} />
+    </div>
   </Layout>
 )
 

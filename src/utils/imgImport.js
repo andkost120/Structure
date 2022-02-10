@@ -1,14 +1,14 @@
 //SVG files
 import logo from "../images/svgs/logo.svg"
 import rightArrow from "../images/svgs/right-arrow.svg"
-
-import avalanche from "../images/svgs/avalanche.svg"
 import curvearrow from "../images/svgs/curvearrow.svg"
-import cosmos from "../images/svgs/cosmos.svg"
-import internetcomputer from "../images/svgs/internetcomputer.svg"
-import shibainu from "../images/svgs/shibainu.svg"
-import decentraland from "../images/svgs/decentraland.svg"
-import yearn from "../images/svgs/yearn.svg"
+
+import avalanche from "../images/icons/avalanche.svg"
+import cosmos from "../images/icons/cosmos.svg"
+import internetcomputer from "../images/icons/internetcomputer.svg"
+import shibainu from "../images/icons/shibainu.svg"
+import decentraland from "../images/icons/decentraland.svg"
+import yearn from "../images/icons/yearn.svg"
 
 import facebook from "../images/icons/facebook.svg"
 import twitter from "../images/icons/twitter.svg"

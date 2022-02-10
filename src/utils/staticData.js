@@ -1,12 +1,18 @@
 import {
   Account,
+  Avalanche,
+  Cosmos,
+  Decentraland,
   Deposit,
   Facebook,
+  Internetcomputer,
   PhoneImg,
+  Shibainu,
   Telegram,
   Trading,
   Twitter,
   World,
+  Yearn,
 } from "./imgImport"
 
 //Homepage Data
@@ -23,7 +29,46 @@ export const join_data = {
   img: PhoneImg,
 }
 
-export const interaction_data = {
+export const cards = [
+  {
+    icon: Yearn,
+    name: "Yearn Classic Finance",
+    price: 20.19,
+    percent: 109.3,
+  },
+  {
+    icon: Decentraland,
+    name: "Decentraland",
+    price: 3.12,
+    percent: 27.1,
+  },
+  {
+    icon: Shibainu,
+    name: "SHIBA INU",
+    price: 0.00005225,
+    percent: 21.4,
+  },
+  {
+    icon: Avalanche,
+    name: "Avalanche",
+    price: 20.19,
+    percent: 109.3,
+  },
+  {
+    icon: Internetcomputer,
+    name: "Internet Computer",
+    price: 20.19,
+    percent: 109.3,
+  },
+  {
+    icon: Cosmos,
+    name: "Cosmos",
+    price: 20.19,
+    percent: 109.3,
+  },
+]
+
+export const interact_data = {
   title: "All of your assets, now in one place",
   content:
     "Deposit crypto to the Structure Mobile App and buy stocks, crypto, and other assets in seconds.",
