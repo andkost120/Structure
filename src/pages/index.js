@@ -10,6 +10,7 @@ import JoinSection from "../components/home/JoinSection"
 import TradingSection from "../components/home/TradingSection"
 
 import { hero_data, join_data } from "../utils/staticData"
+import AssureSection from "../components/home/AssureSection"
 
 const HomePage = () => (
   <Layout>
@@ -19,6 +20,7 @@ const HomePage = () => (
       <InteractSection />
       <CTASection />
       <TradingSection />
+      <AssureSection />
       <GuideSection />
     </div>
     <ConnectSection />

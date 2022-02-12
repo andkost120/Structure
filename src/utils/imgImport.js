@@ -2,6 +2,7 @@
 import logo from "../images/svgs/logo.svg"
 import rightArrow from "../images/svgs/right-arrow.svg"
 import curvearrow from "../images/svgs/curvearrow.svg"
+import check from "../images/svgs/check.svg"
 
 import avalanche from "../images/icons/avalanche.svg"
 import cosmos from "../images/icons/cosmos.svg"
@@ -21,10 +22,12 @@ import trading from "../images/icons/trading.svg"
 //Images
 import phoneImg from "../images/phone.png"
 import world from "../images/world.jpg"
+import goodHands from "../images/good-hands.png"
 
 //SVG files
 export const Logo = logo
 export const RightArrow = rightArrow
+export const Check = check
 
 export const Facebook = facebook
 export const Twitter = twitter
@@ -45,3 +48,4 @@ export const Trading = trading
 //Images
 export const PhoneImg = phoneImg
 export const World = world
+export const GoodHands = goodHands

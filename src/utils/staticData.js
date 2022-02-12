@@ -112,6 +112,13 @@ Received Bitcoin but really wanted Google stock? Accept payments in the asset of
   },
 ]
 
+export const assures = [
+  "Assigned ownership of your coins",
+  "Cutting edge security",
+  "Digital assets backed by real world assets ²",
+  "Crime prevention and good-faith policy ³",
+]
+
 export const guide = [
   {
     title: "Create an account",

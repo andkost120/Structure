@@ -32,15 +32,20 @@ ul {
 }
 
 .container {
-  max-width: calc(100% - 40px);
+  max-width: 1180px;
   margin-left: auto;
   margin-right: auto;
-
-  @include mq("phone") {
-    max-width: calc(100% - 80px);
-  }
-  @include mq("laptop") {
+  @include mq("laptop-md", max) {
     max-width: calc(100% - 260px);
+  }
+  @include mq("laptop", max) {
+    max-width: calc(100% - 100px);
+  }
+  @include mq("tablet", max) {
+    max-width: 688px;
+  }
+  @include mq("phone", max) {
+    max-width: calc(100% - 80px);
   }
 }
 
