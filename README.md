@@ -1,1 +1,1 @@
-StructureFi(https://structure.gatsbyjs.io/)
+StructureFi (https://structure.gatsbyjs.io/)
